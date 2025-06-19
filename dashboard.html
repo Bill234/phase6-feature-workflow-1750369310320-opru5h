@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Welcome to Your Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="profile" class="card">
+                <h2>Profile Information</h2>
+                <div id="user-info">
+                    <p><strong>Name:</strong> <span id="user-name">Loading...</span></p>
+                    <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+                    <p><strong>Member since:</strong> <span id="member-since">Loading...</span></p>
+                </div>
+            </section>
+            
+            <section id="stats" class="card">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <h3 id="projects-count">0</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="tasks-count">0</h3>
+                        <p>Tasks</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="completed-count">0</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
